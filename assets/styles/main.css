@@ -1,0 +1,115 @@
+:root
+{
+    --dark-color: #222;
+    --light-color: #eee;
+    --accent-color: green;
+
+    --font-family: "Monospace";
+}
+
+*
+{
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+body
+{
+    background-color: var(--dark-color);
+    color: var(--light-color);
+    margin: 0;
+}
+
+header
+{
+    z-index: 100;
+    display: flex;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 2.6rem;
+    border-bottom: .1rem solid var(--light-color);
+    place-content: center;
+    background-color: var(--dark-color);
+    align-items: center; 
+    font-size: 1.4rem;
+}
+
+main
+{
+    display: block;
+    padding-top: 3rem;
+    padding-left: 3vw;
+    padding-right: 3vw;
+    padding-bottom: 3rem;
+}
+
+.cards
+{
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    place-content: center;
+}
+
+.card
+{
+    display: block;
+    border: .1rem solid var(--light-color);
+    border-radius: .2rem;
+    background-color: var(--light-color);
+    color: var(--dark-color);
+}
+
+.card img
+{
+    display: block;
+    width: 100%;
+    border-top-left-radius: .2rem;
+    border-top-right-radius: .2rem;
+}
+
+.card h2
+{
+    display: block;
+    margin-top: 1rem;;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1.2rem;
+}
+
+.card p
+{
+    display: block;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    font-size: 1rem;
+}
+
+.card a
+{
+    display: block;
+    width: max-content;
+    padding: .4rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    margin-bottom: 1rem;
+    background-color: var(--accent-color);
+    color: var(--dark-color);
+    font-size: 1rem;
+}
+
+footer
+{
+    z-index: 100;
+    display: flex;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    height: 1.6rem;
+    padding-left: 1vw;
+    border-top: .1rem solid var(--light-color); 
+    background-color: var(--dark-color);
+    align-items: center;
+    font-size: .6rem;  
+}
